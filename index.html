@@ -91,12 +91,13 @@ btn-primary">Click Me</button>
             function changeColor() {
                 var hcolor = "0123456789ABCDEF"
                 var hcode = "";
+                var hc = document.getElementById("hex-code").innerHTML
                 for (var i = 0; i < 6; i++) {
                     // var hindex = Math.floor(Math.random() * hcolor.length)
                     hcode += hcolor[Math.floor(Math.random() * hcolor.length)];
 
                 }
-                document.getElementById("hex-code").innerHTML = hcode;
+                hc = hcode;
 
                 document.body.style.backgroundColor = "#" + hcode;
             }
